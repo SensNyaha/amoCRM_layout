@@ -1,0 +1,97 @@
+.button {
+    display: flex;
+    padding: 21px 35px;
+    background: #4077F3;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    transition: all .3s;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+        background: #4077F3;
+        box-shadow: 0px 0px 20px 6px rgba(64, 119, 243, 0.3);
+    }
+}
+
+.button__text {
+    transition: all 1s;
+    position: relative;
+    left: 0;
+
+    &.sliding {
+        left: calc(100% + 35px);
+    }
+}
+
+.button__spans {
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    right: 101%;
+    transition: all 1s;
+    left: -100%;
+
+    &.sliding {
+        left: 0;
+    }
+
+    & span {
+        left: 0;
+        top: 0;
+        position: relative;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: rgb(255, 255, 255);
+        transition: all 1s;
+    }
+
+    &.animated span:first-of-type {
+        animation: shakeMe 1s linear 0s infinite normal forwards;
+    }
+    
+    &.animated span:nth-of-type(2n) {
+        animation: shakeMe 1s linear .3s infinite normal forwards;
+    }
+    
+    &.animated span:last-of-type {
+        animation: shakeMe 1s linear .6s infinite normal forwards;
+    }
+    
+    &.done span:first-child {
+        top: 2px;
+        left: 13px;
+        transform: rotateZ(45deg);
+        width: 15px;
+        height: 5px;
+        border-radius: 0;
+    }
+    &.done span:nth-child(2n) {
+        opacity: 0;
+    }
+    &.done span:last-child {
+        top: -0px;
+        left: -12px;
+        transform: rotateZ(-45deg);
+        width: 30px;
+        height: 5px;
+        border-radius: 0;
+    }
+    
+    
+    @keyframes shakeMe {
+        0% {top: 0px}
+        25% {top: 4px}
+        75% {top: -4px}
+        100% {top: 0px}
+    }
+}
+
+

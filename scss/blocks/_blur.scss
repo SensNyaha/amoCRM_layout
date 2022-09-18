@@ -1,0 +1,28 @@
+.blur__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+.blur__top-border {
+    position: static;   
+    height: 1px;
+    background: linear-gradient(90deg, #833AB4 0%, #FD1D1D 42.2%, #FCB045 100%);
+}
+.blur__main {
+    position: static;
+    height: 1155px;
+    background: linear-gradient(180deg, #ffffff05 0%, #ffffff00 100%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: -1;
+}
+.blur__bottom-border {
+    position: static;
+    height: 1px;
+    background: linear-gradient(90deg, #FCB045 0%, rgba(253, 29, 29, 0.7) 30.37%, rgba(253, 29, 29, 0) 43.81%);
+    opacity: 0.5;
+}

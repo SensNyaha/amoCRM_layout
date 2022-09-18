@@ -1,0 +1,111 @@
+.faq {
+    margin-top: 150px;
+}
+
+.faq__title {
+}
+
+.faq__content {
+    margin-top: 70px;
+}
+.faq__content-titles {
+    gap: 195px;
+}
+.faq__accordeon {
+    margin-top: 50px;
+    width: 975px;
+    display: flex;
+    flex-direction: column;
+}
+.faq__card {
+    border-top: 0.5px solid #25262C;
+    &:last-of-type {
+        border-bottom: 0.5px solid #25262C;
+    }
+    &:hover {
+        & .faq__question {
+            background: linear-gradient(95.49deg, rgba(255, 246, 233, 0.1) 8.22%, rgba(26, 29, 35, 0.1) 75.4%);
+            &:before {
+                transform: rotateZ(45deg) translate(3px, -5px);
+            }
+            &:after {
+                transform: rotateZ(-45deg) translate(-5px, 3px);
+            }
+        }
+    }
+    &.showing {
+        & .faq__question {
+            background: linear-gradient(95.49deg, rgba(255, 246, 233, 0.1) 8.22%, rgba(26, 29, 35, 0.1) 75.4%);
+            &:before {
+                transform: rotateZ(45deg) translate(3px, -5px);
+            }
+            &:after {
+                transform: rotateZ(-45deg) translate(-5px, -7px);
+            }
+        }
+
+        & .faq__answer {
+            padding: 30px;
+            opacity: 1;
+            line-height: 26px;
+            font-size: 16px;
+            transition: font-size .25s,
+                        padding .25s,
+                        opacity .5s .25s,
+                        line-height .25s
+        }
+    }
+}
+.faq__question {
+    padding: 19px 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    position: relative;
+    background: #0E1014;
+    backdrop-filter: blur(7.5px);
+    cursor: pointer;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 13px;
+        height: 4px;
+        background-color: #656566;
+        transform: rotateZ(45deg);
+        transition: all 0.3s;
+        
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: 13px;
+        top: 25px;
+        width: 13px;
+        height: 4px;
+        background-color: #656566;
+        transform: rotateZ(-45deg);
+        transition: all 0.3s;
+
+    }
+    
+
+
+}
+.faq__answer {
+    opacity: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 0;
+    transition: opacity .25s,
+                font-size .5s .25s,
+                padding .5s .25s,
+                line-height .5s .25s;;
+}

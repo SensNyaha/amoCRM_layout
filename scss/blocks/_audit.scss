@@ -1,0 +1,32 @@
+.audit {
+
+}
+.audit__title {
+
+}
+.audit__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 97px;
+    margin-top: 70px;
+}
+.audit__content-titles {
+    gap: 30px;
+    max-width: 389px;
+}
+
+
+.audit__highlights--red {
+    top: -300px;
+    left: 30%;
+    filter: opacity(0.7);
+}
+.audit__highlights--ball--red {
+    top: -97px;
+    left: 76%;
+}
+.audit__highlights--ball--purple {
+    top: 330px;
+    right: -5%;
+}

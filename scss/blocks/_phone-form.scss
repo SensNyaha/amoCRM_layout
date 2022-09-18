@@ -1,0 +1,79 @@
+.phone-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.phone-form__label {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656566;
+}
+.phone-form__input {
+    margin-top: 10px;
+    width: 262px;
+    height: 62px;
+    border: 1px solid #25262C;
+    background: rgba(14, 16, 20, 0.6);
+    padding: 20px 15px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: text;
+    transition: all 0.3s;
+    &.wrong {
+        position: relative;
+        border: 1px solid #FD1D1D;
+        position: relative;
+        animation: shake .3s ease 0s 1;
+        @keyframes shake {
+            0% {left: 0px}
+            20% {left: 2px}
+            60% {left: -3px}
+            80% {left: 2px}
+            100% {left: 0px}
+        }
+    }
+}
+.phone-form__warning{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FD1D1D;
+    margin-top: 5px;
+    opacity: 0;
+    transition: all 0.3s;
+    &.wrong {
+        opacity: 1;
+    }
+}
+.phone-form__top {
+    display: flex;
+    flex-direction: column;
+}
+.phone-form__bottom {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.phone-form__submit {
+    min-width: 262px;
+    flex-shrink: 0;
+}
+.phone-form__privacy {
+    flex-shrink: 2;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 290px;
+}
+.phone-form__privacy-link {
+    text-decoration-line: underline;
+}

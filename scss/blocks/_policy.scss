@@ -1,0 +1,38 @@
+.policy {
+    z-index: 999;
+    padding: 25px;
+    position: fixed;
+    top:35px;
+    bottom: 35px;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    background-color: rgba(11, 10, 10, 0.95);
+    overflow: auto;
+    border-radius: 40px 0 0 40px;
+}
+.policy__title {
+    font-size: 26px;
+    font-family: "Montserrat";
+    font-size: 25px;
+    line-height: 30px;
+}
+.policy__subtitle {    
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.policy__undertitle {
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 22px;
+
+}
+.policy__point {
+    padding-left: 20px;
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 22px;
+}

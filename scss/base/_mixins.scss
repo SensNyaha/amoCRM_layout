@@ -1,0 +1,61 @@
+@mixin header-text {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin subtitles-colored () {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background: linear-gradient(90deg, #FCB045 0%, #fd1d1d 120%);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: $default-text-color;
+    -webkit-text-fill-color: $default-text-color;
+    span {
+        font-weight: 700;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+    }
+}
+
+@mixin outerLink {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4077F3;
+    transition: all 0.3s;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: .7em;
+        width: 5px;
+        height: 1px;
+        background-color: #4077F3;
+        transform: rotateZ(-40deg);
+        transition: all 0.3s;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: .5em;
+        width: 5px;
+        height: 1px;
+        background-color: #4077F3;
+        transform: rotateZ(40deg);
+        transition: all 0.3s;
+    }
+    &:hover {
+        color: #FFFFFF;
+        &:before, &:after {
+            background-color: #fff;
+        }
+    }
+}

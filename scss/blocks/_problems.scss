@@ -1,0 +1,85 @@
+.problems {
+    margin-top: 156px;
+    position: relative;
+}
+
+.problems__title {
+}
+
+.problems__content {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+.problems__before {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.problems__before-titles {
+    gap: 30px;
+    max-width: 811px;
+}
+
+.problems__before-results {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 192px;
+}
+.problems__before-without {
+    gap: 30px;
+    width: 296px;
+    flex-shrink: 0;
+} 
+.problems__before-noresult {
+    gap: 30px;
+    flex-shrink: 0;
+    width: 653px;
+}
+
+.problems__after {
+    margin-top: 70px;
+}
+
+.problems__after-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.problems__after-item {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.problems__after-img {
+    max-height: 70px;
+    max-width: 70px;
+}
+.problems__after-name {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.problems__after-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.problems__highlights--ball {
+    top: 578px;
+    right: 0%;
+}
+.problems__highlights--yellow {
+    top:-400px;
+    right: -60%;
+    filter: opacity(0.5);
+}

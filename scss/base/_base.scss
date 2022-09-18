@@ -1,0 +1,81 @@
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    &:before {
+        content: '';
+        height: 100%;
+        width: 1px;
+        filter:opacity(0.05);
+        background: linear-gradient(180deg, rgba(252,176,69,1) 0%, rgba(131,58,180,1) 100%);
+        position: absolute;
+        top:0;
+        left: -1px;
+    }
+    &:after {
+        content: '';
+        height: 100%;
+        width: 1px;
+        filter:opacity(0.05);
+        background: linear-gradient(180deg, rgba(252,176,69,1) 0%, rgba(131,58,180,1) 100%);
+        position: absolute;
+        top:0;
+        right: -1px;
+    }
+}
+
+body {
+    background: #0E1014;
+    padding-top: 47px;
+    overflow-x: hidden;
+    & > * {
+        overflow-x: clip;
+    }
+
+}
+
+* {
+    color: $default-text-color;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hide {
+    display: none !important
+}
+
+button {
+    &.active {
+        background: #4077F3;
+        border-color: #4077F3;
+    }
+}
+
+.df {
+
+    &--col {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    &--row {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.unselectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+  }

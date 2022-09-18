@@ -1,0 +1,129 @@
+.calculator {
+    margin-top: 150px;
+}
+.calculator__title {
+}
+
+.calculator__content {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+.calculator__content-titles {
+    max-width: 360px;
+}
+
+.calculator__interactive {
+}
+.calculator__bonuses {
+}
+.calculator__bonuses-text {
+    font-family: 'Inter';
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.calculator__bonuses-list {
+    margin-top: 30px;
+    max-height: 50px;
+    height: 50px;
+}
+
+.calculator__bonuses-item {
+    line-height: 19px;
+    margin-right: 30px;
+}
+
+
+.calculator__calc {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.calculator__calc-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.calculator__calc-question {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.calculator__calc-answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.calculator__calc-answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    padding: 9px 10px;
+    border: 0.5px solid #25262C;
+    backdrop-filter: blur(15px);
+    transition: all 0.3s;
+    &--big {
+        padding: 26px 30px 28px 30px;
+    }
+}
+
+.calculator__calc-phone{
+    margin-top: 40px;
+}
+
+.calculator__highlights--purple {
+    left: -65%;
+    top: -200px;
+    filter: opacity(0.7);
+}
+
+.calculator__highlights--ball--red {
+    left: 94%;
+    top: 1000px;
+}
+
+.calculator__highlights--ball--yellow {
+    top: 820px;
+    left: -2%;
+}
+
+.calculator__highlights--ball--purple {
+    top: 300px;
+    left: 30%;
+}
+
+.calculator__highlights--ball--red--small {
+    width: 35px;
+    height: 35px;
+    top: 880px;
+    left: 27%;
+}
+
+.calculator__highlights--yellow {
+    left: -30%;
+    top: 300px;
+    filter: opacity(0.5)
+}
+
+.calculator__highlights--dots {
+    top: 300px;
+    z-index: -5;
+    left: -1%;
+
+}
+.calculator__highlights--polydron {
+    top: 350px;
+    left: -7%;
+}

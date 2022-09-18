@@ -1,0 +1,79 @@
+.letsmeet {
+    margin-top: 250px;
+    position: relative;
+
+}
+
+.letsmeet__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 31px;
+    margin-top: 70px;
+}
+.letsmeet__preview {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-shrink: 0;
+}
+.letsmeet__preview-title {
+    @include subtitles-colored();
+}
+.letsmeet__preview-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 28px;
+}
+.letsmeet__preview-video {
+    width: 460px;
+    height: 260px;
+}
+.letsmeet__preview-play {
+    max-width: 171px;
+    gap: 10px;
+}
+.letsmeet__preview-button {
+    
+}
+.letsmeet__preview-label {
+    
+}
+.letsmeet__person {
+    position: relative;
+    flex-grow: 1;
+    // background: linear-gradient(135deg, rgba(14, 16, 20, 0) 61.2%, rgba(187, 86, 209, 0.023) 103.33%);
+}
+.letsmeet__person-name {
+    max-width: 200px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 50px;
+
+}
+.letsmeet__person-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.letsmeet__highlights {
+}
+.letsmeet__highlight--red {
+    left: 33%;
+    top: -50px;
+    filter: opacity(0.5);
+}
+.letsmeet__highlight--purple {
+    left: 60%;
+    top: -250px;
+    filter: opacity(0.5);
+}
+.letsmeet__highlight--ball {
+    left: 93%;
+    top: 250px;
+
+}

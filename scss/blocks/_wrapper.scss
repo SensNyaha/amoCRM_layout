@@ -1,0 +1,16 @@
+.wrapper {
+    position: relative;
+    &--audit-calculator {
+        margin-top: 144px;
+        padding-top: 49px;
+        padding-bottom: 156px;
+    }
+}
+
+.wrapper__highlights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}

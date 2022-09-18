@@ -1,0 +1,62 @@
+.access {
+    margin-top: 150px;
+    position: relative;
+}
+.access__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.access__title {
+}
+
+.access__content {
+    margin-top: 70px;
+    display: flex;
+    gap: 98px;
+}
+.access__content-titles {
+    max-width: 389px;
+    gap: 30px;
+}
+
+.access__willget {
+}
+.access__willget-list {
+    gap: 28px;
+}
+
+.access__willget-phone{
+    margin-top: 40px;
+}
+.access__highlights {
+}
+
+.access__highlights--ball--purple {
+    top: -39px;
+    left: 85%;
+}
+.access__highlights--ball--yellow {
+    bottom: -40px;
+    left: -2%;
+}
+.access__highlights--ball--red {
+    top: 250px;
+    right: 0%;
+}
+.access__highlights--purple {
+    top: -288px;
+    left: -60%;
+    filter: opacity(0.6)
+}
+.access__highlights--red {
+    top: -141px;
+    left: 60%;
+    filter: opacity(0.6)
+}
+.access__highlights--yellow {
+    top: -150px;
+    left: 10%;
+    filter: opacity(0.4)
+}

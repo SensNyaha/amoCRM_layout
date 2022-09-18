@@ -1,0 +1,49 @@
+.player {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.542);
+    overflow: hidden;
+}
+
+.player__close, .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+
+    span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        &:first-child {
+            transform: translateY(10px) rotateZ(45deg) ;
+        }
+        &:last-child {
+            transform: translate(0px, 7px) rotateZ(-45deg);
+
+        }
+    }
+}
+.close--fixed {
+    position: fixed;
+}
+
+#player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    height: 70vh;
+    max-width: 920px;
+    max-height: 600px;
+}

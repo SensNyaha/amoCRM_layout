@@ -1,0 +1,72 @@
+.header {
+
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header__navlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 27px;
+}
+.header__logo {
+    max-width: 165px;
+    &-img {
+
+    }
+    &-info {
+        margin-top: 8px;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+.header__menu {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        gap: 30px;
+    }
+    &-item {
+
+    }
+    &-link {
+        @include header-text;
+        transition: all 0.3s;
+        &:hover {
+            color: #FFF;
+        }
+    }
+}
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 50px;
+}
+.header__phone {
+    @include header-text;
+    transition: all 0.3s;
+    &:hover {
+        color: #4077F3;
+    }
+}
+.header__social {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 35px;
+    &-link {
+        display: flex;
+        padding-top: 2px;
+        &:hover svg path {
+            transition: all 0.3s;
+            fill: #4077F3;
+        }
+    }
+}
