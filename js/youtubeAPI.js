@@ -13,12 +13,12 @@ function openVideoModal(e) {
             player.loadVideoById(e.target.dataset.videoid);
         };
     }
-    document.body.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
     playerWrapper.classList.remove('hide')
 }
 
 function closeVideoModal() {
-    document.body.overflow = 'auto';
+    document.body.style.overflow = 'auto';
     playerWrapper.classList.add('hide')
     player.pauseVideo();
 }

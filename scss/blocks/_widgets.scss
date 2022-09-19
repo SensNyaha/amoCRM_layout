@@ -26,7 +26,7 @@
     border: 1px solid #25262C;
 }
 .widgets__info {
-
+    max-width: 778px;
     padding-top: 59px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -50,7 +50,7 @@
 }
 .widgets__opportunities-list {
     margin-top: 20px;
-    max-height: 130px;
+    flex-direction: row;
 }
 .widgets__promo {
     padding-top: 20px;
@@ -65,6 +65,7 @@
 .widgets__promo-info {
     display: flex;
     flex-direction: column;
+    max-width: 778px;
 }
 .widgets__promo-title {
     width: 340px;
@@ -88,11 +89,11 @@
 
 .widgets__list-scrollbar {
     position: absolute;
-    width: 5px;
+    width: 6px;
     height: 50%;
     right: -20px;
     top: 0;
-    background: #6565661f;
+    background: #6565666e;
     border-radius: 10px;
     transition: background 0.3s;
     &:hover {
@@ -110,9 +111,9 @@
 }
 .widgets__list-thumb {
     
-    width: 5px;
+    width: 6px;
     height: 100px;
-    background: #4076f315;
+    background: #4076f360;
     box-shadow: 0px 4px 3px rgba(36, 75, 164, 0.2);
     border-radius: 10px;
     cursor: pointer;
