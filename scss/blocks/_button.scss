@@ -1,7 +1,7 @@
 .button {
     display: flex;
     padding: 21px 35px;
-    background: #4077F3;
+    background-color: #4077F3;
     font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
@@ -12,9 +12,14 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    max-width: 300px;
     &:hover {
         background: #4077F3;
         box-shadow: 0px 0px 20px 6px rgba(64, 119, 243, 0.3);
+    }
+
+    &--dark {
+        background-color: #396ADB;;
     }
 }
 
@@ -95,3 +100,10 @@
 }
 
 
+@media (max-width:640px) {
+    .button {
+        font-size: 13px;
+        line-height: 16px;
+        padding: 19px 16px;
+    }
+}

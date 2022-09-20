@@ -1,4 +1,3 @@
-import {returnScrollWidth} from './returnScrollWidth.js';
 import {hideOrNotBodyScroll} from './toHideOverflowBody.js';
 
 function bindConfidential() {

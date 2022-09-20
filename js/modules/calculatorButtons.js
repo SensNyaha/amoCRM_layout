@@ -1,6 +1,6 @@
 
 
-function bindingCalculator() {
+function bindCalculator() {
     let calculatorQuestions = document.querySelectorAll('.calculator__calc-block');
 
     calculatorQuestions.forEach(block => {
@@ -18,4 +18,4 @@ function bindingCalculator() {
     })
 }
 
-export {bindingCalculator}
+export {bindCalculator}
