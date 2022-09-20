@@ -367,6 +367,17 @@ button.active {
   text-decoration: underline;
 }
 
+@media (max-width: 1010px) {
+  .playvideo__label {
+    display: none;
+  }
+  .playvideo__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .main-page {
   margin-top: 90px;
 }
@@ -653,6 +664,15 @@ button.active {
     left: 5%;
     top: 250px;
   }
+  .main-page__highlights--ball--purple {
+    top: 20px;
+  }
+  .main-page__highlights--ball--red {
+    top: 90px;
+  }
+  .main-page__highlights--dots {
+    top: 54px;
+  }
 }
 @media (max-width: 390px) {
   .main-page__wrapper {
@@ -818,13 +838,14 @@ button.active {
   justify-content: space-between;
   gap: 31px;
   margin-top: 70px;
+  position: relative;
 }
 
 .letsmeet__preview {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .letsmeet__preview-title {
@@ -849,6 +870,7 @@ button.active {
   justify-content: space-between;
   align-items: flex-end;
   gap: 28px;
+  position: relative;
 }
 
 .letsmeet__preview-video {
@@ -872,7 +894,6 @@ button.active {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  margin-left: 50px;
 }
 
 .letsmeet__person-photo {
@@ -899,6 +920,80 @@ button.active {
   top: 250px;
 }
 
+@media (max-width: 1010px) {
+  .letsmeet__content {
+    margin-top: 150px;
+  }
+  .letsmeet__preview-title {
+    left: 0;
+    position: absolute;
+    top: -50%;
+  }
+  .letsmeet__preview {
+    order: 2;
+  }
+  .letsmeet__preview-inner {
+    margin-top: 50px;
+    gap: 0;
+  }
+  .letsmeet__person-photo {
+    right: auto;
+    left: 0;
+    max-height: 120%;
+  }
+  .letsmeet__person-name {
+    position: absolute;
+    left: 95%;
+    top: -10%;
+    width: 220px;
+  }
+}
+@media (max-width: 745px) {
+  .letsmeet {
+    margin-top: 190px;
+  }
+  .letsmeet__preview-video {
+    width: 55vw;
+    height: 35vw;
+  }
+  .letsmeet__content {
+    gap: 5px;
+  }
+  .letsmeet__preview-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .letsmeet__person-name {
+    font-size: 14px;
+    line-height: 17px;
+    left: 75%;
+  }
+  .letsmeet__person {
+    max-width: 210px;
+    min-width: 140px;
+  }
+  .letsmeet__highlight--ball {
+    left: 53%;
+    top: 150px;
+  }
+}
+@media (max-width: 465px) {
+  .letsmeet__preview-video {
+    width: 45vw;
+    height: 28vw;
+  }
+  .letsmeet__preview-title {
+    top: -70%;
+  }
+}
+@media (max-width: 380px) {
+  .letsmeet__content {
+    margin-top: 110px;
+  }
+  .letsmeet__preview-title {
+    top: -70%;
+  }
+}
 .highlights {
   position: absolute;
   top: 0;

@@ -57,3 +57,16 @@
         }
     }
 }
+
+@media (max-width:1010px) {
+    .playvideo__label {
+        display: none;
+    }
+
+    .playvideo__button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
