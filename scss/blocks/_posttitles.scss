@@ -1,5 +1,6 @@
 .posttitles {
     display: flex;
+    flex-wrap: wrap
 }
 
 .posttitles__title {
@@ -51,5 +52,16 @@
         display: flex;
         gap: 10px;
         flex-direction: column;
+    }
+}
+
+@media (max-width:520px) {
+    .posttitles__title {
+        font-size: 18px;
+        line-height: 22px;  
+    }
+    .posttitles__subtitle {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
