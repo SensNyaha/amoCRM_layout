@@ -10,6 +10,7 @@
     justify-content: flex-start;
     gap: 97px;
     margin-top: 70px;
+    flex-wrap: wrap;
 }
 .audit__content-titles {
     gap: 30px;
@@ -29,4 +30,17 @@
 .audit__highlights--ball--purple {
     top: 330px;
     right: -5%;
+}
+
+@media (max-width: 1100px) {
+    .audit__content {
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 520px) {
+    .audit__content {
+        
+    }
 }

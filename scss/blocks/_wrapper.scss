@@ -7,6 +7,12 @@
     }
 }
 
+@media (max-width: 800px) {
+    .wrapper--audit-calculator {
+        margin-top: 40px;
+    }
+}
+
 .wrapper__highlights {
     position: absolute;
     top: 0;

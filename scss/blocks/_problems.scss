@@ -150,6 +150,9 @@
         overflow: hidden;
     }
 
+    .problems__after {
+        margin-top: 40px;
+    }
     .problems__after-name {
         font-size: 16px;
         line-height: 19px;
@@ -158,6 +161,9 @@
     .problems__after-text {
         font-size: 14px;
         line-height: 20px;
+    }
+    .problems__after-list {
+        margin-top: 30px;
     }
     .problems__after-item {
         gap: 10px;

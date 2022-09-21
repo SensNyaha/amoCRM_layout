@@ -1355,6 +1355,9 @@ button.active {
     gap: 15px;
     overflow: hidden;
   }
+  .problems__after {
+    margin-top: 40px;
+  }
   .problems__after-name {
     font-size: 16px;
     line-height: 19px;
@@ -1362,6 +1365,9 @@ button.active {
   .problems__after-text {
     font-size: 14px;
     line-height: 20px;
+  }
+  .problems__after-list {
+    margin-top: 30px;
   }
   .problems__after-item {
     gap: 10px;
@@ -1482,6 +1488,8 @@ button.active {
   display: flex;
   gap: 30px;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
 }
 
 .phone-form__submit {
@@ -1502,12 +1510,19 @@ button.active {
   text-decoration-line: underline;
 }
 
+@media (max-width: 520px) {
+  .phone-form__label {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 .audit__content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 97px;
   margin-top: 70px;
+  flex-wrap: wrap;
 }
 
 .audit__content-titles {
@@ -1531,6 +1546,12 @@ button.active {
   right: -5%;
 }
 
+@media (max-width: 1100px) {
+  .audit__content {
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
 .wrapper {
   position: relative;
 }
@@ -1540,6 +1561,11 @@ button.active {
   padding-bottom: 156px;
 }
 
+@media (max-width: 800px) {
+  .wrapper--audit-calculator {
+    margin-top: 40px;
+  }
+}
 .wrapper__highlights {
   position: absolute;
   top: 0;

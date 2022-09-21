@@ -61,6 +61,8 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: 5px;
 }
 .phone-form__submit {
     min-width: 262px;
@@ -76,4 +78,11 @@
 }
 .phone-form__privacy-link {
     text-decoration-line: underline;
+}
+
+@media (max-width: 520px) {
+    .phone-form__label {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
