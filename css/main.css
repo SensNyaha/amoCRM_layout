@@ -993,6 +993,15 @@ button.active {
   .letsmeet__preview-title {
     top: -70%;
   }
+  .letsmeet__person-name {
+    font-size: 12px;
+  }
+  .letsmeet__person-photo {
+    max-height: 100%;
+  }
+  .letsmeet__person {
+    min-width: 100px;
+  }
 }
 .highlights {
   position: absolute;
@@ -1065,7 +1074,7 @@ button.active {
   margin-top: 70px;
 }
 .about__content-title {
-  width: 390px;
+  max-width: 390px;
   font-family: "Inter";
   font-weight: 400;
   font-size: 24px;
@@ -1087,6 +1096,8 @@ button.active {
   display: flex;
   justify-content: space-between;
   max-width: 977px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .about__item {
@@ -1123,6 +1134,32 @@ button.active {
   filter: opacity(0.6);
 }
 
+@media (max-width: 520px) {
+  .about {
+    margin-top: 80px;
+  }
+  .about__list {
+    margin-top: 20px;
+  }
+  .about__item:first-child {
+    order: 1;
+  }
+  .about__content {
+    margin-top: 40px;
+  }
+  .about__content-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .about__number {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .about__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 .markedList {
   display: flex;
   flex-direction: column;
