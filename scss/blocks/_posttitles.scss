@@ -55,6 +55,12 @@
     }
 }
 
+@media (max-width: 790px) {
+    .posttitles__subtitle {
+        width: auto;
+    }
+}
+
 @media (max-width:520px) {
     .posttitles__title {
         font-size: 18px;

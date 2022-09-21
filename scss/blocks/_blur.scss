@@ -14,7 +14,7 @@
 }
 .blur__main {
     position: static;
-    height: 1155px;
+    height: 1355px;
     background: linear-gradient(180deg, #ffffff05 0%, #ffffff00 100%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -25,4 +25,10 @@
     height: 1px;
     background: linear-gradient(90deg, #FCB045 0%, rgba(253, 29, 29, 0.7) 30.37%, rgba(253, 29, 29, 0) 43.81%);
     opacity: 0.5;
+}
+
+@media (max-width: 790px) {
+    .blur__main {
+        height: 1750px;
+    }
 }

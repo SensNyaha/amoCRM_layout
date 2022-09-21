@@ -104,6 +104,10 @@
 }
 
 @media (max-width:700px) {
+
+    .problems {
+        margin-top: 80px;
+    }
     .problems__before-results {
         flex-direction: column;
         justify-content: flex-start;

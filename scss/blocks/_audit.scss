@@ -34,13 +34,10 @@
 
 @media (max-width: 1100px) {
     .audit__content {
-        gap: 20px;
-        justify-content: space-between;
+
+        gap: 0px;
+        row-gap: 30px;
     }
 }
 
-@media (max-width: 520px) {
-    .audit__content {
-        
-    }
-}
+

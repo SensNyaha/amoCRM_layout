@@ -124,6 +124,83 @@
 
 }
 .calculator__highlights--polydron {
-    top: 350px;
+    top: 550px;
     left: -7%;
+}
+
+@media (max-width: 1085px) {
+    .calculator__content {
+        gap: 50px;
+    }
+    .calculator__bonuses-list {
+        flex-direction: row;
+        max-height: none;
+        height: auto;
+    }
+    .calculator__calc-answer--big {
+        padding: 15px;
+    }
+    .calculator__highlights--polydron {
+        top: 500px;
+        left: -14%;
+    }
+}
+
+@media (max-width: 790px) {
+    .calculator {
+        margin-top: 80px;
+    }
+    .calculator__content {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .calculator__content-titles {
+        max-width: none;
+    }
+    .calculator__bonuses-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .calculator__bonuses-item {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+
+    .calculator__calc-question {
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .calculator__calc-answers {
+        justify-content: center;
+        font-size: 14px;
+        line-height: 17px;
+        gap: 10px;
+    }
+    .calculator__calc-answer {
+        padding: 6px;
+    }
+    .calculator__calc-phone {
+        align-items: center;
+
+        .phone-form__bottom {
+            align-items: center;
+        }
+    }
+
+
+    .calculator__highlights--yellow {
+        left: 40%;
+
+    }
+    .calculator__highlights--polydron {
+        top: 900px;
+        left: -44%;
+    }
+}
+
+@media (max-width:510px) {
+
 }
