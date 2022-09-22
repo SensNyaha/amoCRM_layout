@@ -11,6 +11,7 @@ import { bindConfidential } from './modules/confidential.js';
 import { bindAnchors } from './modules/anchors.js';
 import { openAndFillPopup } from './modules/popups.js';
 import { bindProblemButtons } from './modules/problemsButtons.js';
+import { bindServiceCards } from './modules/services.js';
 
 videoTriggersHoverEffect();
 loadYTVideoThumbnail();
@@ -26,3 +27,4 @@ bindConfidential();
 bindAnchors();
 openAndFillPopup();
 bindProblemButtons();
+bindServiceCards();
