@@ -37,14 +37,18 @@ function bindingWidgetCards() {
 
 
     let widgetList = document.querySelector('.widgets__list-wrapper');
-    let scrollbar = document.querySelector('.widgets__list-scrollbar');
+    let list = document.querySelector('.widgets__list');
+
 
     widgetList.addEventListener('click', (e) => {
-        widgetList.classList.toggle('opened')
+        widgetList.classList.toggle('opened');
         if (widgetList.classList.contains('opened')) {
-            scrollbar.style.display = 'block'
+            widgetList.scrollTop = 0;
+            list.style.top = ''
         } else {
-            scrollbar.style.display = 'none'
+            let newOffsetTop = - (e.target.closest('.widgets__item').offsetTop - widgetList.scrollTop);
+            list.style.top = `${newOffsetTop}px`;
+
         }
     })
 }

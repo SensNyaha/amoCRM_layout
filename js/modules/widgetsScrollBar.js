@@ -39,7 +39,6 @@ function widgetsScrollBar() {
         function scrollList(topOffset) {
             let ratio = fullyScrolledHeight / (listHeight - listWrapperHeight);
             list.style.top = -topOffset / ratio + 'px';
-            console.log(listHeight, listWrapperHeight)
         }
 
 
