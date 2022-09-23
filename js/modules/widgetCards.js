@@ -18,7 +18,6 @@ function bindingWidgetCards() {
         let seek;
         widgetCards.forEach(card => {
             if (card.dataset.what === trigger.dataset.to) {
-                console.log(card);
                 seek = card;
             }
         })
@@ -33,6 +32,20 @@ function bindingWidgetCards() {
             findMyInfocard(btn).classList.add('showing');
         })
 
+    })
+
+
+
+    let widgetList = document.querySelector('.widgets__list-wrapper');
+    let scrollbar = document.querySelector('.widgets__list-scrollbar');
+
+    widgetList.addEventListener('click', (e) => {
+        widgetList.classList.toggle('opened')
+        if (widgetList.classList.contains('opened')) {
+            scrollbar.style.display = 'block'
+        } else {
+            scrollbar.style.display = 'none'
+        }
     })
 }
 

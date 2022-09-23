@@ -15,8 +15,8 @@
     overflow-y: clip;
     position: relative;
     margin-top: 50px;
-    max-height: 596px;
-    height: 596px;
+    min-height: 596px;
+    height: max-content;
     // overflow-y: hidden;
     background: linear-gradient(152.66deg, rgba(26, 29, 35, 0.1) -0.56%, rgba(26, 29, 35, 0.1) 30.32%, rgba(26, 29, 35, 0.1) 59.86%, rgba(26, 29, 35, 0.2) 89.45%, rgba(26, 29, 35, 0.2) 115.41%);
     backdrop-filter: blur(15px);
@@ -84,14 +84,15 @@
 
 .widgets__list-wrapper {
     height: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .widgets__list-scrollbar {
     position: absolute;
+    z-index: 1000;
     width: 6px;
     height: 50%;
-    right: -20px;
+    right: -5px;
     top: 0;
     background: #6565666e;
     border-radius: 10px;
@@ -163,4 +164,37 @@
 .widgets__highlights--ball--purple {
     top: 163px;
     left: 75%;
+}
+
+@media (max-width: 1090px) {
+    .widgets__choice {
+        grid-template-columns: 1fr 310px;
+        
+    }
+    .widgets__item {
+        width: 310px;
+    }
+    .widgets__name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+    .widgets__list-wrapper {
+        height: 78px;
+        position: absolute;
+        right: 0;
+        width: 310px;
+        &.opened {
+            height:100%
+        }
+
+    }
+    .widgets__list-scrollbar {
+        display: none;
+    }
+    .widgets__choice {
+        grid-template-columns: 1fr;
+    }
 }
