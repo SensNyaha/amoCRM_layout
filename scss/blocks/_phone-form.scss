@@ -89,6 +89,9 @@
 }
 
 @media (max-width: 520px) {
+    .phone-form {
+        align-items: center;
+    }
     .phone-form__label {
         font-size: 14px;
         line-height: 17px;

@@ -37,3 +37,24 @@
     left: -30%;
     filter: opacity(0.5)
 }
+
+@media (max-width: 800px) {
+    .individual {
+        margin-top: 80px;
+    }
+    .individual__inner {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .individual__content {
+        margin-top: 25px;
+        gap: 35px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 640px) {
+    .individual__content {
+        justify-content: center;
+    }
+}

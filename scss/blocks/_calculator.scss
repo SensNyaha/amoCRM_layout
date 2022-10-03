@@ -196,11 +196,14 @@
 
     }
     .calculator__highlights--polydron {
-        top: 900px;
+        top: 760px;
         left: -44%;
     }
 }
 
 @media (max-width:510px) {
-
+    .calculator__highlights--polydron {
+        top: 900px;
+        left: -44%;
+    }
 }

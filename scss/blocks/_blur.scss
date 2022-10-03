@@ -29,6 +29,11 @@
 
 @media (max-width: 790px) {
     .blur__main {
-        height: 1750px;
+        height: 1570px;
+    }
+}
+@media (max-width: 510px) {
+    .blur__main {
+        height: 1770px;
     }
 }
