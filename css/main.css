@@ -3237,9 +3237,7 @@ button.active {
   grid-template-columns: 200px 200px 200px;
   grid-template-rows: 100px 100px 100px;
   grid-auto-rows: 100px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .thanks__logo {
@@ -3340,6 +3338,102 @@ button.active {
   left: 20%;
 }
 
+@media (max-width: 1180px) {
+  .thanks__grid {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(2, 50px);
+    grid-auto-rows: 50px;
+  }
+  .thanks__letter-box {
+    max-width: unset;
+  }
+  .thanks__content {
+    gap: 30px;
+  }
+}
+@media (max-width: 870px) {
+  .thanks__content {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .thanks__letter-box {
+    order: 2;
+  }
+  .thanks__grid {
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: space-evenly;
+  }
+  .thanks__text {
+    margin-top: 30px;
+  }
+  .thanks__more {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 670px) {
+  .thanks__img {
+    max-width: 110px;
+  }
+  .thanks__name {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .thanks__grid {
+    grid-template-columns: repeat(auto-fill, 140px);
+    justify-content: space-evenly;
+  }
+  .thanks__fulltext-box {
+    max-width: 80vw;
+    left: -80vw;
+  }
+  .thanks__fulltext-box.showing {
+    transform: translateX(80vw);
+  }
+}
+@media (max-width: 640px) {
+  .thanks {
+    margin-top: 80px;
+  }
+  .thanks__inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .thanks__content {
+    margin-top: 20px;
+    gap: 30px;
+  }
+  .thanks__company {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .thanks__person {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .thanks__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 490px) {
+  .thanks__grid {
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, 85px);
+    grid-template-rows: repeat(2, 30px);
+    grid-auto-rows: 30px;
+  }
+  .thanks__img {
+    max-width: 70px;
+  }
+  .thanks__name {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .thanks__text {
+    margin-top: 15px;
+  }
+}
 .certify {
   margin-top: 150px;
 }
