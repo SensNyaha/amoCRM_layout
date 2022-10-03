@@ -2614,6 +2614,9 @@ button.active {
   .individual__content {
     justify-content: center;
   }
+  .individual__content-titles {
+    align-self: flex-start;
+  }
 }
 .blurred {
   background: linear-gradient(162.2deg, rgba(255, 246, 233, 0.1) -1.42%, rgba(26, 29, 35, 0.1) 25.01%, rgba(26, 29, 35, 0.1) 50.31%, rgba(26, 29, 35, 0.2) 75.65%, rgba(26, 29, 35, 0.2) 97.87%);
@@ -2740,6 +2743,48 @@ button.active {
   left: 74%;
 }
 
+@media (max-width: 1140px) {
+  .integra__grid {
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 640px) {
+  .integra {
+    margin-top: 60px;
+  }
+  .integra__content {
+    margin-top: 25px;
+  }
+  .integra__content-title {
+    width: auto;
+  }
+  .integra__labels {
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .integra__grid {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    row-gap: 25px;
+  }
+  .integra__block {
+    width: 45%;
+  }
+  .integra__block-title {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+  }
+  .integra__labels-img {
+    max-height: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .integra__block {
+    width: 46%;
+  }
+}
 .clients {
   margin-top: 150px;
   position: relative;
