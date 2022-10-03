@@ -17,6 +17,7 @@
     flex-direction: row;
     gap: 20px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .certify__card {
@@ -63,4 +64,36 @@
 .certify__highlights--dots {
     top: 0px;
     left: 60%;
+}
+
+@media (max-width: 790px) {
+    .certify__content-titles {
+        gap: 40px;
+    }
+    .certify__cards {
+        justify-content: space-between;
+    }
+    .certify__card {
+        width: 48%;
+    }
+}
+@media (max-width: 640px) {
+    .certify {
+        margin-top: 80px;
+    }
+    .certify__content {
+        margin-top: 50px;
+    }
+    .certify__content-titles {
+        gap: 20px;
+    }
+}
+@media (max-width: 530px) {
+    .certify__card {
+        width: 100%;
+        height: 55px;
+    }
+    .certify__img {
+        max-height: 80%;
+    }
 }
