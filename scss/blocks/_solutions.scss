@@ -108,3 +108,81 @@
 
 }
 
+@media (max-width: 1200px) {
+    // .solutions__grid {
+    //     grid-template-columns: repeat(3, 1fr);
+    // }
+    // .solutions__card {
+    //     padding: 25px 25px;
+    // }
+    // .solutions__preview-play--top {
+    //     top: 30px
+    // }
+    .solutions__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: unset;
+    }
+    .solutions__card {
+        grid-area: unset;
+        position: relative;
+    }
+    .solutions__video-wrapper {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+    .solutions__preview-video {
+        display: none;
+    }
+    .playvideo__label {
+        display: none;
+    }
+    .solutions__preview-play {
+        width: auto;
+    }
+}
+
+@media (max-width: 1010px) {
+    .solutions__video-wrapper, .solutions__preview-play--top {
+        top: 55px;
+        right: 50px;
+    }
+}
+
+@media (max-width:830px) {
+    .solutions {
+        margin-top: 80px;
+    }
+    .solutions__content {
+        margin-top: 30px;
+    }
+    .solutions__content-titles {
+        gap: 40px;
+    }
+}
+
+@media (max-width:640px) {
+    .solutions__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 210px;
+        grid-auto-rows: 210px;
+    }
+    .solutions__dimension {
+        font-size: 14px;
+    }
+    .solutions__company-type {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width:640px) {
+    .solutions__card {
+        padding: 30px 20px;
+    }
+    .solutions__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 230px;
+        grid-auto-rows: 230px;
+    }
+}

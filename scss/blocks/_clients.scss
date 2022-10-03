@@ -78,8 +78,16 @@
 }
 
 @media (max-width:440px) {
+    .clients__logo {
+        width: 41px;
+        height: 41px;
+        img {
+            max-width: 60%;
+        }
+    }
     .clients__grid {
         column-gap: 10px;
+        row-gap: 15px;
     }
     .clients__name {
         font-size: 14px;
