@@ -59,9 +59,12 @@
     .posttitles__subtitle {
         width: auto;
     }
+    .posttitles__title {
+        width: auto;
+    }
 }
 
-@media (max-width:520px) {
+@media (max-width:640px) {
     .posttitles__title {
         font-size: 18px;
         line-height: 22px;  

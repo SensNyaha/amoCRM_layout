@@ -42,7 +42,14 @@
     }
 }
 
-@media (max-width:350px) {
+@media (max-width: 790px) {
+    .markedLi {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width:420px) {
     .markedLi {
         width: 100%;
         font-size: 14px;

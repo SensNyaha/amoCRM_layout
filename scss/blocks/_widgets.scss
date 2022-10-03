@@ -54,10 +54,8 @@
     flex-direction: row;
 }
 .widgets__promo {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    padding-left: 50px;
+    margin-top: 15px;
+    padding: 20px 50px 20px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,7 +67,7 @@
     max-width: 778px;
 }
 .widgets__promo-title {
-    width: 340px;
+    max-width: 340px;
     font-family: 'Inter';
     font-weight: 500;
     font-size: 18px;
@@ -80,6 +78,7 @@
 }
 .widgets__promo-button {
     align-self: flex-end;
+    flex-shrink: 0;
 }
 
 
@@ -138,7 +137,7 @@
     background: linear-gradient(152.66deg, rgba(26, 29, 35, 0.1) -0.56%, rgba(26, 29, 35, 0.1) 30.32%, rgba(26, 29, 35, 0.1) 59.86%, rgba(26, 29, 35, 0.2) 89.45%, rgba(26, 29, 35, 0.2) 115.41%);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(26, 29, 35, 0.591);
-    filter:brightness(0.3);
+    filter:brightness(0.4);
     &:hover {
         filter:brightness(1)
     }
@@ -186,11 +185,12 @@
         height: 78px;
         position: absolute;
         right: 0;
-        width: 310px;
+        width: 320px;
+
         &.opened {
             height:100%;
             overflow: auto;
-
+            overflow-x: hidden;
             & .widgets__item {
                 &::before, &::after {
                     display: none;
@@ -208,7 +208,7 @@
 
     .widgets__item {
         background-color: rgba(82, 82, 226, 0.839);
-
+        width: 320px;
         &:before {
             content: '';
             position: absolute;
@@ -232,8 +232,99 @@
             transition: all 0.3s;
         }
     }
+
+    .widgets__info {
+        max-width: unset;
+    }
+
+    .widgets__content-titles {
+        gap: 140px;
+    }
 }
 
-@media (max-width:745px) {
-    wrapper, list, item => width: 100%;
+@media (max-width:790px) {
+    .widgets__content {
+        margin-top: 35px;
+    }
+    .widgets__content-titles {
+        gap: 30px;
+    }
+    .widgets__choice {
+        padding-top: 78px;
+    }
+    .widgets__list-wrapper, .widgets__list, .widgets__item {
+        width: 100%;
+    }
+    .widgets__info {
+        padding: 30px 10px
+    }
+    .widgets__opportunities-title, .widgets__promo-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .widgets__opportunities-list{
+        flex-direction: column;
+    }
+    .widgets__opportunities-list .markedLi{
+        width: auto;
+    }
+    .widgets__promo {
+        padding: 15px 25px;
+    }
+}
+
+@media (max-width:550px) { 
+    .widgets__choice {
+        margin-top: 20px;
+    }
+    .widgets__opportunities {
+        padding-left: 20px;
+    }
+    .widgets__promo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .widgets__promo-title {
+        max-width: unset;
+    }
+    .widgets__promo-button {
+        width: 100%;
+        max-width: unset;
+    }
+}
+
+@media (max-width:420px) {
+    .widgets__list-wrapper {
+        height: 48px;
+    }
+    .widgets__item {
+        height: 48px;
+        &:before, &:after {
+            top: 24px;
+            height: 2px;
+        }
+    }
+    .widgets__info {
+        padding: 0;
+    }
+    .widgets__opportunities {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .widgets__choice {
+        padding-top: 48px;
+        min-height: 400px;
+    }
+    .widgets__name {
+        font-size: 12px;
+    }
+    .widgets__promo {
+        padding: 0;
+        border: 2px solid #7e23785b;
+        margin-top: 20px;
+    }
+    .widgets__promo-info {
+        padding: 15px;
+    }
 }
