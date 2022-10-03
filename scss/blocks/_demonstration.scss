@@ -44,3 +44,27 @@
     left: 30%;
     filter: opacity(0.5);
 }
+
+@media (max-width: 800px) {
+    .demonstration {
+        margin-top: 80px;
+    }
+    .demonstration__inner {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .demonstration__content {
+        margin-top: 25px;
+        gap: 35px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 640px) {
+    .demonstration__content {
+        justify-content: center;
+    }
+    .demonstration__content-titles {
+        align-self: flex-start;
+    }
+}
