@@ -60,3 +60,25 @@
     left: 10%;
     filter: opacity(0.4)
 }
+
+@media (max-width: 880px) {
+    .access__content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .access__content {
+        flex-direction: column;
+    }
+    .access {
+        margin-top: 70px;
+    }
+    .access__inner {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .access__content {
+        margin-top: 40px;
+    }
+}
