@@ -1007,6 +1007,9 @@ button.active {
   }
 }
 @media (max-width: 380px) {
+  .letsmeet {
+    margin-top: 90px;
+  }
   .letsmeet__content {
     margin-top: 110px;
   }
@@ -1052,7 +1055,7 @@ button.active {
 .player__close, .close {
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 35px;
   cursor: pointer;
   width: 25px;
   height: 25px;
@@ -1355,11 +1358,11 @@ button.active {
     width: fit-content;
     padding: 16px;
     padding-right: 40px;
-    background: url("./../images/problems/cursor.png") no-repeat right center/5%;
+    background: url("./../images/problems/cursor.png") no-repeat 95% center/5%;
     filter: brightness(0.5);
     cursor: pointer;
     transition: all 0.5s;
-    border: 1px solid transparent;
+    border: 1px solid rgba(150, 20, 150, 0.658);
     max-width: 250px;
   }
   .problems__before-elem-title + .problems__before-list {
@@ -1383,6 +1386,7 @@ button.active {
   }
   .problems__before-elem-title.chosen + .problems__before-list {
     max-height: 900px;
+    padding-bottom: 20px;
   }
   .problems__before-without, .problems__before-noresult {
     gap: 15px;
@@ -4117,10 +4121,7 @@ button.active {
   background: #0E1014;
   border: 1px solid #25262C;
   border-radius: 5px;
-  padding-top: 60px;
-  padding-left: 80px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding: 60px 50px 50px 80px;
   transition: all 0.3s;
 }
 
@@ -4169,4 +4170,36 @@ button.active {
   gap: 10px;
   margin-top: 32px;
   align-items: flex-start;
+}
+
+@media (max-width: 850px) {
+  .popup__block {
+    width: 95%;
+    padding: 30px 60px 30px 50px;
+  }
+}
+@media (max-width: 670px) {
+  .popup__form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .popup__form .phone-form__bottom {
+    margin-top: 0;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .popup__block {
+    width: 95%;
+    padding: 20px 30px 20px 30px;
+  }
+  .popup__title {
+    font-size: 20px;
+    line-height: 25px;
+    padding-right: 30px;
+  }
+  .popup__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }/*# sourceMappingURL=main.css.map */

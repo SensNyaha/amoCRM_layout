@@ -117,11 +117,11 @@
         width: fit-content;
         padding: 16px;
         padding-right: 40px;
-        background: url('./../images/problems/cursor.png') no-repeat right center/5%;
+        background: url("./../images/problems/cursor.png") no-repeat 95% center/5%;
         filter: brightness(0.5);
         cursor: pointer;
         transition: all 0.5s;
-        border: 1px solid transparent;
+        border: 1px solid rgba(150, 20, 150, 0.658);
         max-width: 250px;
 
         &+.problems__before-list {
@@ -145,6 +145,7 @@
 
             &+.problems__before-list {
                 max-height: 900px;
+                padding-bottom: 20px;
             }
         }
     }
