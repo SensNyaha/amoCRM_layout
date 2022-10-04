@@ -109,3 +109,38 @@
                 padding .5s .25s,
                 line-height .5s .25s;;
 }
+
+@media (max-width: 1000px) {
+    .faq__accordeon {
+        width: 100%;
+    }
+}
+@media (max-width: 830px) {
+    .faq__content-titles {
+        gap: 30px
+    }
+}
+
+@media (max-width: 640px) {
+    .faq {
+        margin-top: 80px;
+    }
+    .faq__content {
+        margin-top: 40px;
+    }
+    .faq__accordeon {
+        margin-top: 30px;
+    }
+    .faq__question {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 15px 50px 15px 20px;
+        &:before, &:after {
+            top: 50%;
+        }
+    }
+    .faq__card.showing .faq__answer {
+        line-height: 20px;
+        font-size: 14px;
+    }
+}

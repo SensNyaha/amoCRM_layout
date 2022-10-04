@@ -259,4 +259,11 @@
     .thanks__text {
         margin-top: 15px;
     }
+    .thanks__fulltext-box {
+        max-width: 95vw;
+        left: -95vw;
+        &.showing {
+            transform: translateX(95vw);
+        }
+    }
 }
