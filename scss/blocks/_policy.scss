@@ -36,3 +36,20 @@
     font-size: 14px;
     line-height: 22px;
 }
+
+@media (max-width: 870px) {
+    .policy {
+        width: 70vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+@media (max-width: 640px) {
+    .policy {
+        width: 96vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        top: 15px;
+        bottom: 15px;
+    }
+}
